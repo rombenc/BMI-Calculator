@@ -11,7 +11,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ffffff; /* Warna latar belakang putih */
+    background-color: #ececec; /* Warna latar belakang putih */
     color: black; /* Warna teks */
 }
 
@@ -33,9 +33,9 @@ body {
 }
 .calculator,
 .result {
-    background-color: #f5f5f5; /* Warna latar belakang abu-abu muda */
+    background-color: #f5f3f3; /* Warna latar belakang abu-abu muda */
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 25px;
     color: black; /* Warna teks */
 }
 
@@ -151,11 +151,11 @@ button:hover {
 }
 
 input:checked + .slider {
-    background-color: #2196F3;
+    background-color: #42cda1;
 }
 
 input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
+    box-shadow: 0 0 1px #42cda1;
 }
 
 input:checked + .slider:before {

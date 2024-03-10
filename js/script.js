@@ -13,6 +13,7 @@ document.getElementById('bmiForm').addEventListener('submit', function(event) {
     var advice;
     var penyakit;
     var infoUsia;
+    
 
     if (age >= 18) {
         bmi = weight / (heightInMeter * heightInMeter);
@@ -113,7 +114,7 @@ document.getElementById('bmiForm').addEventListener('submit', function(event) {
                                 "<strong>Hasil:</strong> " + bmiCategory + "<br>" +
                                 "<strong>Berat badan:</strong> " + perbandinganBerat + " ideal" + "<br>" +
                                 "<strong>Saran:</strong> " + advice + "<br>" +
-                                "<strong>Penyakit:</strong> " + penyakit + "<br>" +
+                                "<strong>Keadaan:</strong> " + (penyakit ? penyakit : "Anda Sehat!") + "<br>" +
                                 "<strong>" + infoUsia + "</strong>";
     
     elemenHasil.classList.add("result");
