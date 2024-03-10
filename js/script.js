@@ -17,9 +17,6 @@ document.getElementById('bmiForm').addEventListener('submit', function(event) {
     if (age >= 18) {
         bmi = weight / (heightInMeter * heightInMeter);
     } else {
-        // Untuk anak-anak, perhitungan BMI berbeda berdasarkan usia dan jenis kelamin
-        // Di sini, kami menggunakan grafik pertumbuhan BMI untuk usia anak-anak dan remaja dari CDC
-        // Anda mungkin perlu menyesuaikan ini berdasarkan persyaratan atau pedoman spesifik Anda
         var bmiForAge;
         if (gender === 'male') {
             bmiForAge = 17.55 + (weight * 0.416) - (height * 0.0573) - 34.9;
@@ -41,13 +38,13 @@ document.getElementById('bmiForm').addEventListener('submit', function(event) {
     if (age >= 18) {
         // Kategori BMI dan saran untuk dewasa
         if (gender === 'male') {
-            if (bmi < 20.7) {
+            if (bmi < 18.5) {
                 bmiCategory = "Kurang berat badan";
                 advice = "Anda mungkin perlu menambah berat badan untuk meningkatkan kesehatan secara keseluruhan. Konsultasikan dengan profesional kesehatan atau ahli gizi untuk saran yang dipersonalisasi.";
-            } else if (bmi >= 20.7 && bmi <= 26.4) {
+            } else if (bmi >= 18.5 && bmi <= 24.9) {
                 bmiCategory = "Berat badan normal";
                 advice = "Selamat! Berat badan Anda berada dalam rentang sehat. Pertahankan pola makan seimbang dan olahraga teratur untuk tetap sehat.";
-            } else if (bmi >= 26.5 && bmi <= 31.1) {
+            } else if (bmi >= 25.0 && bmi <= 29.9) {
                 bmiCategory = "Kelebihan berat badan";
                 advice = "Anda mungkin perlu menurunkan berat badan untuk mengurangi risiko mengembangkan masalah kesehatan. Pertimbangkan untuk mengadopsi gaya hidup yang lebih sehat dengan pola makan seimbang dan olahraga teratur.";
                 penyakit = "Obesitas dapat meningkatkan risiko penyakit jantung, diabetes tipe 2, tekanan darah tinggi, dan beberapa jenis kanker.";
@@ -57,13 +54,13 @@ document.getElementById('bmiForm').addEventListener('submit', function(event) {
                 penyakit = "Obesitas meningkatkan risiko penyakit jantung, diabetes tipe 2, tekanan darah tinggi, dan beberapa jenis kanker.";
             }
         } else { // Anggap jenis kelamin adalah 'female'
-            if (bmi < 19.1) {
+            if (bmi < 18.5) {
                 bmiCategory = "Kurang berat badan";
                 advice = "Anda mungkin perlu menambah berat badan untuk meningkatkan kesehatan secara keseluruhan. Konsultasikan dengan profesional kesehatan atau ahli gizi untuk saran yang dipersonalisasi.";
-            } else if (bmi >= 19.1 && bmi <= 25.8) {
+            } else if (bmi >= 18.5 && bmi <= 24.9) {
                 bmiCategory = "Berat badan normal";
                 advice = "Selamat! Berat badan Anda berada dalam rentang sehat. Pertahankan pola makan seimbang dan olahraga teratur untuk tetap sehat.";
-            } else if (bmi >= 25.9 && bmi <= 32.2) {
+            } else if (bmi >= 25.0 && bmi <= 29.9) {
                 bmiCategory = "Kelebihan berat badan";
                 advice = "Anda mungkin perlu menurunkan berat badan untuk mengurangi risiko mengembangkan masalah kesehatan. Pertimbangkan untuk mengadopsi gaya hidup yang lebih sehat dengan pola makan seimbang dan olahraga teratur.";
                 penyakit = "Obesitas dapat meningkatkan risiko penyakit jantung, diabetes tipe 2, tekanan darah tinggi, dan beberapa jenis kanker.";
