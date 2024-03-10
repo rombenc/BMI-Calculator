@@ -118,3 +118,6 @@ document.getElementById('bmiForm').addEventListener('submit', function(event) {
     
     elemenHasil.classList.add("result");
 });
+document.getElementById('darkModeToggle').addEventListener('change', function() {
+    document.body.classList.toggle('dark-mode');
+});

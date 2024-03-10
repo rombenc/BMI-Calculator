@@ -6,6 +6,14 @@
 </head>
 <header><h1>Kalkulator BMI</h1></header>
 <body>
+    <div class="toggle-container">
+        <label class="toggle-label">Dark Mode</label>
+        <label class="switch">
+            <input type="checkbox" id="darkModeToggle">
+            <span class="slider round"></span>
+        </label>
+    </div>
+
     <div class="container">
         <!-- Kalkulator BMI -->  
         <div class="calculator">
@@ -34,17 +42,16 @@
                     <input type="text" id="height" required>
                 </div>
                 
-                
-                
                 <button type="submit">Kirim</button>
             </form>
         </div>
         
-        <div class="result">
+        <div class="result" id="result">
             <div><h1>Hasil</h1></div>
-            <div id="result" class="result-content"></div>
+            <div class="result-content"></div>
         </div>
     </div>
 
     <script src="js/script.js"></script>
 </body>
+</html>
