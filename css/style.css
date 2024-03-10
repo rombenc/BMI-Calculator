@@ -68,7 +68,7 @@ select {
 
 button {
     padding: 10px 20px;
-    background-color: #cccccc; /* Biru hijau */
+    background-color: #3cba92; /* Biru hijau */
     color: white; /* Teks putih */
     border: none;
     border-radius: 5px;
@@ -77,7 +77,7 @@ button {
 }
 
 button:hover {
-    background-color: #5e5e5e; /* Biru hijau lebih gelap saat dihover */
+    background-color: #1d8463; /* Biru hijau lebih gelap saat dihover */
 }
 
 /* Media queries untuk responsivitas */
