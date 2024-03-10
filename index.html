@@ -7,7 +7,8 @@
 <header><h1>Kalkulator BMI</h1></header>
 <body>
     <div class="toggle-container">
-        <label class="toggle-label">Dark Mode</label>
+         <span class="sun">&#9728;</span>
+         <span class="moon">&#9790;</span>
         <label class="switch">
             <input type="checkbox" id="darkModeToggle">
             <span class="slider round"></span>
@@ -17,7 +18,7 @@
     <div class="container">
         <!-- Kalkulator BMI -->  
         <div class="calculator">
-            <header> <h1>Kalkulator</h1></header>
+            <header> <h1>Masukan data</h1></header>
             <p>"Berat badan ideal adalah impian semua orang, bukan hanya memiliki bentuk tubuh yang menunjang penampilan, tapi juga menandakan kondisi tubuh yang sehat."</p>
             <form id="bmiForm">
                 <div class="form-group">
@@ -47,7 +48,7 @@
         </div>
         
         <div class="result" id="result">
-            <div><h1>Hasil</h1></div>
+            <header class="result-header"><h1>Hasil</h1></header>
             <div class="result-content"></div>
         </div>
     </div>
