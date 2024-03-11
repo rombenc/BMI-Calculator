@@ -1,3 +1,7 @@
+document.getElementById('resetButton').addEventListener('click', function() {
+    var elemenHasil = document.getElementById('result');
+    elemenHasil.innerHTML = ""; // lCear the content of the result element
+});
 document.getElementById('bmiForm').addEventListener('submit', function(event) {
     event.preventDefault();
 
@@ -122,3 +126,4 @@ document.getElementById('bmiForm').addEventListener('submit', function(event) {
 document.getElementById('darkModeToggle').addEventListener('change', function() {
     document.body.classList.toggle('dark-mode');
 });
+
