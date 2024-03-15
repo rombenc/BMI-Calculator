@@ -1,59 +1,60 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Kalkulator BMI</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
-<header><h1>Kalkulator BMI</h1></header>
-<body>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <header><h1>Kalkulator BMI</h1></header>
+  <body>
     <div class="toggle-container">
-         <span class="sun">&#9728;</span>
-         <span class="moon">&#9790;</span>
-        <label class="switch">
-            <input type="checkbox" id="darkModeToggle">
-            <span class="slider round"></span>
-        </label>
+      <span class="sun">&#9728;</span>
+      <span class="moon">&#9790;</span>
+      <label class="switch">
+        <input type="checkbox" id="darkModeToggle" />
+        <span class="slider round"></span>
+      </label>
     </div>
 
     <div class="container">
-        <!-- Kalkulator BMI -->  
-        <div class="calculator">
-            <header> <h1>Masukan data</h1></header>
-            <p>"Berat badan ideal adalah impian semua orang, bukan hanya memiliki bentuk tubuh yang menunjang penampilan, tapi juga menandakan kondisi tubuh yang sehat."</p>
-            <form id="bmiForm">
-                <div class="form-group">
-                    <label for="gender">Jenis Kelamin:</label>
-                    <select id="gender" required>
-                        <option value="">Pilih</option>
-                        <option value="male">Pria</option>
-                        <option value="female">Wanita</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="weight">Berat (kg):</label>
-                    <input type="number" id="weight" step="0.01" required>
-                </div>
-                <div class="form-group">
-                    <label for="age">Usia:</label>
-                    <input type="number" id="age" required>
-                </div>
-               
-                <div class="form-group">
-                    <label for="height">Tinggi (cm):</label>
-                    <input type="text" id="height" required>
-                </div>
-                
-                <button type="submit">Kirim</button>
-                <button type="reset" id="resetButton">Reset</button>
-            </form>
-        </div>
-        <!-- Result/hasil bmi --> 
-        <div class="result" id="result">
-            <header class="result-header"><h1>Hasil</h1></header>
-            <div class="result-content"></div>
-        </div>
+      <!-- Kalkulator BMI -->
+      <div class="calculator">
+        <header><h1>Masukan data</h1></header>
+        <p>"Berat badan ideal adalah impian semua orang, bukan hanya memiliki bentuk tubuh yang menunjang penampilan, tapi juga menandakan kondisi tubuh yang sehat."</p>
+        <form id="bmiForm">
+          <div class="form-group">
+            <label for="gender">Jenis Kelamin:</label>
+            <select id="gender" required>
+              <option value="">Pilih</option>
+              <option value="male">Pria</option>
+              <option value="female">Wanita</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="weight">Berat (kg):</label>
+            <input type="number" id="weight" step="0.01" required />
+          </div>
+          <div class="form-group">
+            <label for="age">Usia:</label>
+            <input type="number" id="age" required />
+          </div>
+
+          <div class="form-group">
+            <label for="height">Tinggi (cm):</label>
+            <input type="text" id="height" required />
+          </div>
+
+          <button type="submit">Kirim</button>
+          <button type="reset" id="resetButton">Reset</button>
+        </form>
+      </div>
+      <!-- Result/hasil bmi -->
+      <div class="result" id="result">
+        <header class="result-header"><h1>Hasil</h1></header>
+        <div class="result-content"></div>
+      </div>
     </div>
 
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>
